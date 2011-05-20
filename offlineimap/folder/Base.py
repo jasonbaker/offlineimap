@@ -265,8 +265,8 @@ class BaseFolder(object):
                 # Save uploaded status in the statusfolder
                 statusfolder.savemessage(uid, message, flags, rtime)
             else:
-                raise UserWarning("Trying to save msg (uid %d) on folder "
-                                  "%s returned invalid uid %d" % \
+                raise UserWarning("Trying to save msg (uid %s) on folder "
+                                  "%s returned invalid uid %s" % \
                                       (uid,
                                        dstfolder.getvisiblename(),
                                        newuid))
